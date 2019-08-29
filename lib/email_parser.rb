@@ -8,10 +8,10 @@ class EmailAddressParser
   attr_accessor :email_list
 
   def initialize (raw_email_addresses)
-    email_list = raw_email_addresses
+    @email_list = raw_email_addresses
   end
 
-  def parse (@email_list)
+  def parse
     @email_list.split(/, |,| /)
 binding.pry
       # splits the argument by space or comma or comma-space
