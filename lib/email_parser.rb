@@ -13,7 +13,7 @@ class EmailAddressParser
 
   def parse
     @clean_emails = []
-    clean_emails = @email_list.split(/, |,| /)
+    clean_emails = @email_list.split(/, |,| /).uniq
 #binding.pry
       # splits the argument by space or comma or comma-space
       # removes duplicate addresses
