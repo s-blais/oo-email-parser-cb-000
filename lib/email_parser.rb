@@ -11,8 +11,8 @@ class EmailAddressParser
     email_list = raw_email_addresses
   end
 
-  def parse (email_list)
-    email_list.split(/, |,| /)
+  def parse (@email_list)
+    @email_list.split(/, |,| /)
 binding.pry
       # splits the argument by space or comma or comma-space
       # removes duplicate addresses
